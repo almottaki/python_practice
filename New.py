@@ -13,4 +13,4 @@ elif (a == 33):
 elif (a < 33):
     print("You are Fail")
 
-print200 // 25
+print200 // 20
