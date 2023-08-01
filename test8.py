@@ -2,13 +2,15 @@
 # list2 = ["Dear", "Sir"]
 # list1.extend(list2)
 # print(list1)
-#
-#
-# list1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
-# list1.pop(1)
-# list1.pop(3)
-# print(list1)
-#
+
+
+list1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
+for data in list1:
+    if data == "":
+        list1.remove(data)
+
+print(list1)
+
 # list1 = [1, 1, 1, 0, 0, 0, 2, -2, -2]
 # x = max(list1)
 # print(x)
@@ -16,7 +18,7 @@
 # list1 = [1, 1, 1, 0, 0, 0, 2, -2, -2]
 # x = min(list1)
 # print(x)
-
+#
 # def split_and_join(line):
 #     x = line.split(' ')
 #     y = '-'.join(x)
@@ -26,8 +28,8 @@
 #     line = input()
 #     result = split_and_join(line)
 #     print(result)
-
-
+#
+#
 # def print_full_name(first, last):
 #     full_name = f"{first} {last}"
 #     print(f"Hello {full_name}! You just delved into Python.")
@@ -39,7 +41,7 @@
 #         first_name = input("Enter the first name: ")
 #         last_name = input("Enter the last name: ")
 #         print_full_name(first_name, last_name)
-
+#
 # def print_full_name(first, last):
 #     full_name = f"{first} {last}"
 #     print(f"Hello {full_name}! You just delved into python.")
@@ -48,7 +50,7 @@
 #     first_name = input("")
 #     last_name = input("")
 #     print_full_name(first_name, last_name)
-
+#
 #
 # def count_substring(string, sub_string):
 #     count = 0
