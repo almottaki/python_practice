@@ -70,3 +70,22 @@ print(list1)
 #
 #     count = count_substring(string, sub_string)
 #     print(count)
+
+
+def count_vowels_and_consonants(sentence):
+    vowels = "aeiouAEIOU"
+    vowel_count = 0
+    consonant_count = 0
+
+    for x in sentence:
+        if x in vowels:
+            vowel_count += 1
+        else:
+            consonant_count += 1
+
+    return vowel_count, consonant_count
+
+sentence = input().strip()
+vowels, consonants = count_vowels_and_consonants(sentence)
+print("Number of vowels:", vowels)
+print("Number of consonants:", consonants)
