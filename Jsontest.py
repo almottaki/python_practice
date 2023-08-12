@@ -18,7 +18,7 @@
 #
 # y = json.loads(x)
 #
-# print(y["home"])
+# print(y["age"])
 
 
 
@@ -48,9 +48,8 @@
 # ]
 # }
 #
-# y = json.dumps(data)
-#
-# print(y)
+# x = json.dumps(data)
+# print(x["MARJIA"])
 
 
 # import json
@@ -85,9 +84,21 @@
 # print(json.dumps(x, indent=4, sort_keys=True))
 
 
-import json
-file=open("/home/mottaki/Documents/sample.json", "r")
-x=file.read()
-finaldata=json.loads(x)
+# import json
+# file=open("/home/mottaki/Documents/sample.json", "r")
+# x=file.read()
+# print(json.loads(x))
+# print(json.loads(x["Education"]))
 
-print(finaldata)
+# import json
+#
+# x = '{"name":"MOTTAKI", "age":"21", "home":"Rangpur"}'
+#
+# x['test'] = True
+# print(json.dumps(x))
+
+# import json
+# file=open("/home/mottaki/Documents/sample.json", "w")
+# x=file.write('{"name":"MOTTAKI", "age":"21"}')
+# y = json.dumps(x)
+# print(y)

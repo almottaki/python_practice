@@ -79,3 +79,11 @@ b = [0]
 b.remove(0)
 b.extend(a)
 print(b)
+
+
+name = ["Mottaki", "Abdullah", "Mamun", "Tanjil", "Rana", "Kamal"]
+name.sort()
+print(name)
+name.sort(key = len)
+name.reverse()
+print(name)

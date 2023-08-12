@@ -2,6 +2,16 @@ Roll = [1, 2, 3, 5, 6, 8, 9]
 for x in Roll:
     print(x)
 
+
+list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+if 4 in list:
+    print("Yes")
+else :
+    print("No")
+
+
+
+
 a = ["apple", "banana", "cherry", "kiwi", "mango"]
 b = []
 
@@ -79,3 +89,41 @@ a = ["a", "b", "c"]
 b = [1, 2, 3]
 a.extend(b)
 print(a)
+
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)
+
+list1 = ["Hello ", "take "]
+list2 = ["Dear", "Sir"]
+list1.extend(list2)
+print(list1)
+
+
+list1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
+for data in list1:
+    if data == "":
+        list1.remove(data)
+
+print(list1)
+
+list1 = [1, 1, 1, 0, 0, 0, 2, -2, -2]
+x = max(list1)
+print(x)
+
+list1 = [1, 1, 1, 0, 0, 0, 2, -2, -2]
+x = min(list1)
+print(x)
+
+nestedList = [1, 2, 'a', ['b', 'c'], 1, 3]
+subList = nestedList[3]
+element = nestedList[3][0]
+
+nestedlist = ['a', [1, 2, 'b'], [4, 5, 6], [7, 8, 'c', 9]]
+for list in nestedlist:
+  for number in list:
+    print(number, end=' ')
+
+x = [item for sublist in nestedlist for item in sublist]
+
+print(x)

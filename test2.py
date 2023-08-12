@@ -82,6 +82,10 @@ print(a.strip())
 a = "Hello, World!"
 print(a.split())
 
+fruits = ["apple","banana","mango"]
+x = fruits.index("banana")
+print(x)
+
 a = "Hello"
 b = "World"
 c = a + " " + b
