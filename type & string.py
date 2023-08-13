@@ -110,3 +110,54 @@ if (x + y) > 25:
 
 b = "Hello, World!"
 print(b[:-2])
+
+
+for name in "MOTTAKI":
+    print(name)
+
+quantity = 3
+item = 567
+price = 49.95
+print(f"I want {quantity} pieces of item {item} for {price} dollars")
+
+a = "It is \"too difficult to\" understand!"
+print(a)
+
+print(bool("0"))
+print(bool(0))
+
+x = "MOTTAKI"
+print(len(x))
+
+x = 10
+y = 20
+print(x//y)
+
+x = ["apple", "banana", "cherry"]
+print(len(x))
+
+a = ["apple", "banana", "cherry"]
+b = [1, 5, 7, 9, 3]
+c = [True, False, False]
+print(a[:-2])
+print(c)
+
+mylist = ["apple", "banana", "cherry"]
+print(type(mylist))
+
+a = ["apple", "banana", "cherry"]
+print(a)
+
+b = list(("apple", 50, 100, 200, "cherry"))
+print(b[-3])
+print(b[-5:-3])
+if "apple" in b :
+    print("yes, 'apple' is in the list.")
+
+x = [1, 2, 5, 7, 9]
+x[1] = 3
+print(x)
+
+x = [1, 2, 5, 8, 9]
+x[1:3] = [3, 6, 7]
+print(x)
