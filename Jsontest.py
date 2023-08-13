@@ -25,7 +25,7 @@
 # import json
 #
 # data = {
-#     "MOTTAKI": [
+#     "mottaki": [
 #         {
 #             "Age": "21",
 #             "Date of Birth": "16-09-2002",
@@ -36,7 +36,7 @@
 #             ]
 #         }
 # ],
-#     "MARJIA": [
+#     "marjia": [
 #         {
 #             "Age": "15",
 #             "Date of Birth": "13-12-2008",
@@ -48,8 +48,7 @@
 # ]
 # }
 #
-# x = json.dumps(data)
-# print(x["MARJIA"])
+# print(json.dumps(data['marjia']))
 
 
 # import json
@@ -85,10 +84,8 @@
 
 
 # import json
-# file=open("/home/mottaki/Documents/sample.json", "r")
-# x=file.read()
-# print(json.loads(x))
-# print(json.loads(x["Education"]))
+# with open('sample.json', "r") as x:
+#     print(json.load(x['marjia']))
 
 # import json
 #

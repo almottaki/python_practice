@@ -1,0 +1,23 @@
+{
+    "mottaki": [
+        {
+            "Age": "21",
+            "Date of Birth": "16-09-2002",
+            "Education": [
+            "JSC",
+            "SSC",
+            "DIPLOMA"
+            ]
+        }
+],
+    "marjia": [
+        {
+            "Age": "15",
+            "Date of Birth": "13-12-2008",
+            "Education": [
+            "PSC"
+            ]
+        }
+
+]
+}
