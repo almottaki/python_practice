@@ -1,61 +1,61 @@
-def simplefunction():
-    print("say hello to function")
-    a,b = 5,10
-    x = a * b
-    print(x)
-
-simplefunction()
-
-def sum(num1, num2):
-    sum = num1 + num2
-    print(sum)
-
-sum(10,20)
-sum(50,40)
-
-def function(num1, num2):
-    print(num1, "-", num2)
-
-function(10,5)
-
-def function(num1, num2=10):
-    print(num1, "-", num2)
-
-function(5)
-function(5,20)
-
-def func(name, old):
-    print("My name is", name, "and i am", old, "years old")
-
-func("Mottaki", 20)
-
-var = "Hello "
-
-def variable():
-    print(var + "World")
-
-variable()
-
-x = "Hello "
-
-def y():
-    global x
-    x = x + "World"
-    print(x)
-
-y()
-
-x = "Hello "
-
-def y():
-    local = x
-    local = local + "World"
-    print(local)
-
-y()
-
-
-
+# def simplefunction():
+#     print("say hello to function")
+#     a,b = 5,10
+#     x = a * b
+#     print(x)
+#
+# simplefunction()
+#
+# def sum(num1, num2):
+#     sum = num1 + num2
+#     print(sum)
+#
+# sum(10,20)
+# sum(50,40)
+#
+# def function(num1, num2):
+#     print(num1, "-", num2)
+#
+# function(10,5)
+#
+# def function(num1, num2=10):
+#     print(num1, "-", num2)
+#
+# function(5)
+# function(5,20)
+#
+# def func(name, old):
+#     print("My name is", name, "and i am", old, "years old")
+#
+# func("Mottaki", 20)
+#
+# var = "Hello "
+#
+# def variable():
+#     print(var + "World")
+#
+# variable()
+#
+# x = "Hello "
+#
+# def y():
+#     global x
+#     x = x + "World"
+#     print(x)
+#
+# y()
+#
+# x = "Hello "
+#
+# def y():
+#     local = x
+#     local = local + "World"
+#     print(local)
+#
+# y()
+#
+#
+#
 # def split_and_join(line):
 #     x = line.split(' ')
 #     y = '-'.join(x)
@@ -107,28 +107,28 @@ y()
 #
 #     count = count_substring(string, sub_string)
 #     print(count)
-
-
-def count_vowels_and_consonants(sentence):
-    vowels = "aeiouAEIOU"
-    vowel_count = 0
-    consonant_count = 0
-
-    for x in sentence:
-        if x in vowels:
-            vowel_count += 1
-        else:
-            consonant_count += 1
-
-    return vowel_count, consonant_count
-
-sentence = input().strip()
-vowels, consonants = count_vowels_and_consonants(sentence)
-print("Number of vowels:", vowels)
-print("Number of consonants:", consonants)
-
-
-
+#
+#
+# def count_vowels_and_consonants(sentence):
+#     vowels = "aeiouAEIOU"
+#     vowel_count = 0
+#     consonant_count = 0
+#
+#     for x in sentence:
+#         if x in vowels:
+#             vowel_count += 1
+#         else:
+#             consonant_count += 1
+#
+#     return vowel_count, consonant_count
+#
+# sentence = input().strip()
+# vowels, consonants = count_vowels_and_consonants(sentence)
+# print("Number of vowels:", vowels)
+# print("Number of consonants:", consonants)
+#
+#
+#
 # def pyramid_range(rows):
 #     for x in range(1, rows + 1):
 #         print("" * (rows - x), end="")
@@ -148,51 +148,75 @@ print("Number of consonants:", consonants)
 # x = range(1, n+1)
 # for a in x:
 #     print(a, end="")
+#
+#
+#
+# def add(x, y):
+#     return x + y
+#
+# def subtract(x, y):
+#     return x - y
+#
+# def multiply(x, y):
+#     return x * y
+#
+# def divide(x, y):
+#     if y == 0:
+#         raise ValueError("Cannot divide by zero.")
+#     z = x // y
+#     return z
+#
+#
+# print("Welcome to the Python Calculator!")
+# print("Select operation:")
+# print("1. add")
+# print("2. Subtract")
+# print("3. Multiply")
+# print("4. Divide")
+#
+# try:
+#     choice = int(input("Enter choice (1/2/3/4): "))
+#
+#     if choice not in [1, 2, 3, 4]:
+#         print("Invalid choice.")
+#     else:
+#         num1 = float(input("Enter first number: "))
+#         num2 = float(input("Enter second number: "))
+#
+#         if choice == 1:
+#             print("Result:", add(num1, num2))
+#         elif choice == 2:
+#             print("Result:", subtract(num1, num2))
+#         elif choice == 3:
+#             print("Result:", multiply(num1, num2))
+#         elif choice == 4:
+#             print("Result:", divide(num1, num2))
+#
+# except ValueError:
+#     print("Invalid input. Please enter numbers only.")
+# except ZeroDivisionError:
+#     print("Error: Cannot divide by zero.")
 
 
 
-def add(x, y):
-    return x + y
+# def my_function(*kids):
+#   print("The youngest child is " + kids[3])
+#
+# my_function("Emil", "Tobias", "Linus", "James")
 
-def subtract(x, y):
-    return x - y
-
-def multiply(x, y):
-    return x * y
-
-def divide(x, y):
-    if y == 0:
-        raise ValueError("Cannot divide by zero.")
-    z = x // y
-    return z
+# def my_function(child1, child2, child3):
+#   print("The youngest child is " + child3)
+#
+# my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
 
 
-print("Welcome to the Python Calculator!")
-print("Select operation:")
-print("1. add")
-print("2. Subtract")
-print("3. Multiply")
-print("4. Divide")
+# def my_function(*kids):              #when I don't know how many arguments will passed in function.
+#   print("The youngest child is " + kids[2])
+#
+# my_function("Emil", "Tobias", "Linus")
 
-try:
-    choice = int(input("Enter choice (1/2/3/4): "))
 
-    if choice not in [1, 2, 3, 4]:
-        print("Invalid choice.")
-    else:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-
-        if choice == 1:
-            print("Result:", add(num1, num2))
-        elif choice == 2:
-            print("Result:", subtract(num1, num2))
-        elif choice == 3:
-            print("Result:", multiply(num1, num2))
-        elif choice == 4:
-            print("Result:", divide(num1, num2))
-
-except ValueError:
-    print("Invalid input. Please enter numbers only.")
-except ZeroDivisionError:
-    print("Error: Cannot divide by zero.")
+# def my_function(**kid):                 ##when I don't know how many keybased arguments will passed in function.
+#   print("His last name is " + kid["lname"])
+#
+# my_function(fname = "Tobias", lname = "Refsnes")
